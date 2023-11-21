@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Banner from './componentes/Banner/Banner'; //Isso é a estrutura de importação do componente que eu criei. Importa como uma TAG
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
