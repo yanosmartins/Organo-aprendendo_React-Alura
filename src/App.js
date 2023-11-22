@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+
 import Banner from './componentes/Banner/Banner'; //Isso é a estrutura de importação do componente que eu criei. Importa como uma TAG
+import CampoTexto from './componentes/CampoTexto'; //Neste import, eu não precisei de CampoTexto/CampoTexto.js... Pelo simples fato de ter renomeado pra index.js lá... É um bom macete.
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CampoTexto />
+
     </div>
   );
 }

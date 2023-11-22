@@ -1,5 +1,5 @@
 import './Banner.css'
-function Banner() { 
+function Banner() {  //Componente React começamos com letras maiúsculas.
     //JSX -> isso é como o react lê isso aqui e transforma em elementos no DOM. Parece html mas não é!
     return(
         //class é uma palavra reservada em JavaScript.
