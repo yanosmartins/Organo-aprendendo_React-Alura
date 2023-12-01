@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -24,7 +24,13 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => { //CRIANDO UMA FUNÇÂO
         evento.preventDefault() //aqui estamos previnindo o comportamento padrão.
-        console.log('Form foi submetido =>', nome, cargo, imagem, time)
+        // console.log('Form foi submetido =>', nome, cargo, imagem, time)
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem: imagem, //é a mesma coisa do que escrever só imagem
+            time
+        })
     }
 
     return (
