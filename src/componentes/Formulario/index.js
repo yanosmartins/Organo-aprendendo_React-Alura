@@ -26,11 +26,15 @@ const Formulario = (props) => {
         evento.preventDefault() //aqui estamos previnindo o comportamento padrão.
         // console.log('Form foi submetido =>', nome, cargo, imagem, time)
         props.aoColaboradorCadastrado({
-            nome,
-            cargo,
-            imagem: imagem, //é a mesma coisa do que escrever só imagem
+            nome: nome,
+            cargo: cargo,
+            imagem, //é a mesma coisa do que escrever  "imagem:imagem"
             time
         })
+        SetNome('')
+        SetCargo('')
+        SetImagem('')
+        SetTime('')
     }
 
     return (
