@@ -25,6 +25,7 @@ function App() {
   const [colaboradores, setColabores] = useState([])
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
+    // debugger //aqui a gente consegue criar um ponto de depuração ou "debug e executar o programa linha por linha no console de desenvolvimento do navegador(F12)"
     setColabores([...colaboradores, colaborador])
   }
 
