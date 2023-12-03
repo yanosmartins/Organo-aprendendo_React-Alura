@@ -4,6 +4,7 @@ import Banner from './componentes/Banner/Banner'; //Isso é a estrutura de impor
 // import CampoTexto from './componentes/CampoTexto'; //Neste import, eu não precisei de CampoTexto/CampoTexto.js... Pelo simples fato de ter renomeado pra index.js lá... É um bom macete.
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         corSecundaria={time.corSecundaria}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       />)}
+      <Rodape />
 
     </div>
   );
